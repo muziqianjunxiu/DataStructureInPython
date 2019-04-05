@@ -1,4 +1,4 @@
-#栈
+#顺序栈
 class SequenceStack:
     '''
     顺序栈的节点属性self.top值指示栈顶位置，值为-1时表示栈空。栈内元素采用数组s存储，下标值与self.top值对应。
