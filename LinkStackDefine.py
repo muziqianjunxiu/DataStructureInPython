@@ -67,9 +67,28 @@ class LinkStack:
             while itop.next!=None:
                 itop=itop.next
                 print(itop.data,end='\t')
+            print('\n')
             return   
-            
+    def ReverseStackTraverse(self):        
+        if self.IsEmptyStack():
+            print('栈为空')
+            return
+        else:
+            itop=self.top
+            tlist=[]
+            while itop.next!=None:
+                itop=itop.next
+                tlist.append(itop.data)
+               
+            #print(tlist[::-1])
+            print('反序输出栈为：')
+            for i in reversed(tlist):
+                print(i,end='\t')
+            print(tlist,tlist[::-1])
+            return #list(tlist.reverse())
+            #return tlist[::-1]
 
-la=LinkStack()
-la.CreateStackByInput()
-la.StackTraverse()
+# la=LinkStack()
+# la.CreateStackByInput()
+# la.StackTraverse()
+# la.ReverseStackTraverse()
