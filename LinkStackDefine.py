@@ -1,3 +1,4 @@
+#定义链栈节点
 class StackNode:
     '''
     链栈的节点：包含一个数据域 self.data，   一个指针域 self.next 。
@@ -5,7 +6,7 @@ class StackNode:
     def __init__(self):
         self.data=None  
         self.next=None
-
+#定义链栈类
 class LinkStack:
     ''' 
     链栈的初始化：即初始化一个栈顶节点，其数据域为None，指针域next始终指向栈顶元素，是不移动的。
@@ -15,7 +16,6 @@ class LinkStack:
     '''
     def __init__(self):
         self.top=StackNode()
-
 #判断栈是否为空
     def IsEmptyStack(self):
         if self.top.next==None:
@@ -69,6 +69,7 @@ class LinkStack:
                 print(itop.data,end='\t')
             print('\n')
             return   
+#栈的反序遍历
     def ReverseStackTraverse(self):        
         if self.IsEmptyStack():
             print('栈为空')
