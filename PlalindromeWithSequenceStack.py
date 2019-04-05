@@ -1,6 +1,6 @@
 #判断单词是否为回文数
 from SequenceStackDefine import SequenceStack
-
+#定义两个栈，分别将单词顺序入栈，反序入栈，再比较两个栈内容。
 def Plalindrome(str):
     ss1=SequenceStack(20)
     ss2=SequenceStack(20)
