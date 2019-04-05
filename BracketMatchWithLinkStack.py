@@ -25,7 +25,6 @@ def BracketMatch(self,str):
         print('括号匹配不成功')
         print('未匹配的括号为：',end=' ')
         ls.ReverseStackTraverse()
-
 #读取文件内容的函数
 def ReadFile(self,strFileName):
     f=open(strFileName)
