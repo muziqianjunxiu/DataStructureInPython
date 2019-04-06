@@ -83,7 +83,6 @@ class CircularSequenceQueue:
             data=input('输入入队元素：')
         return
 
-
 # ls=CircularSequenceQueue(5)   #使用1,2,3,4,5测试
 # ls.CreateQueueByInput()       
 # ls.QueueTraverse()
