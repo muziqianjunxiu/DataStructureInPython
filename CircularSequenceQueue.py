@@ -33,6 +33,7 @@ class CircularSequenceQueue:
             return 
         else:
             self.front=(self.front+1) % self.MaxQueueSize
+            print('当前出队元素为',self.s[self.front])
             return self.s[self.front]
         
 
@@ -67,7 +68,7 @@ class CircularSequenceQueue:
             print('队列为空')
             return
         else:
-            return(self.s[self.front+1]) 
+            return(self.s[(self.front+1)%self.MaxQueueSize]) 
 #获取队尾元素
     def GetRear(self):
         if self.IsEmptyQueue():
@@ -88,7 +89,7 @@ class CircularSequenceQueue:
 
 
 # ls=CircularSequenceQueue(5)   #使用1,2,3,4,5测试
-# ls.CreateQueueByInput()
+# ls.CreateQueueByInput()       
 # ls.QueueTraverse()
 # ls.ReverseQueueTraverse()
 # ls.DeQueue()
