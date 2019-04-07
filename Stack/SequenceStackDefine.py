@@ -50,8 +50,21 @@ class SequenceStack:
             print('栈为空')
             return
         else:
+            print('正序输出栈：')
+            print(self.s[::1])
             for i in range(0,self.top+1):
-                print(self.s[i],end='\n')
+                print(self.s[i])
+#反序遍历栈内元素
+    def ReverseStackTraverse(self):
+        if self.IsEmptyStack():
+            print('栈为空')
+            return
+        else:
+            print('反序输出栈')
+            print(self.s[::-1])
+            for i in range(self.top,-1,-1):
+                print(self.s[i])
+
 #通过用户输入建栈
     def CreateStackByInput(self):
         data=input('输入元素，结束按"#"键：')
@@ -91,4 +104,8 @@ class SequenceStack:
                     return False 
 
 #访问注释文档，使用__doc__方法，不用带（）
-print(SequenceStack.__doc__)
+#print(SequenceStack.__doc__)
+test=SequenceStack(3)
+test.CreateStackByInput()
+test.StackTraverse()
+test.ReverseStackTraverse()
