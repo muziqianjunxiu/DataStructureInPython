@@ -3,6 +3,7 @@ class CircularSequenceQueue:
     元素个数：(rear-front+MaxQueueSize) % MaxQueueSize
     队空条件：front==rear
     队满条件：front==(rear+1) % MaxQueueSize
+    顺序存储即采用数组存储元素，以下标值 为依据 访问操作
     '''
 #初始化循环顺序队列
     def __init__(self,MaxSize):
