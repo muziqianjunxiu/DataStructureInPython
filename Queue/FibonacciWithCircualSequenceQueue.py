@@ -1,7 +1,7 @@
 from CircularSequenceQueueDefine import CircularSequenceQueue as csq
 class Fibonacci:
     '''
-    利用2个队列元素的循环队列，实现斐波那契数计算小兔数，
+    利用2个队列元素的循环顺序队列，实现斐波那契数计算小兔数，
     '''
     def FibonacciMake(self,n):
         qu=csq(2)
