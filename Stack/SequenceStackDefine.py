@@ -105,7 +105,7 @@ class SequenceStack:
 
 #访问注释文档，使用__doc__方法，不用带（）
 #print(SequenceStack.__doc__)
-test=SequenceStack(3)
-test.CreateStackByInput()
-test.StackTraverse()
-test.ReverseStackTraverse()
+# test=SequenceStack(3)
+# test.CreateStackByInput()
+# test.StackTraverse()
+# test.ReverseStackTraverse()
