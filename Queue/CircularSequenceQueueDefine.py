@@ -34,7 +34,7 @@ class CircularSequenceQueue:
             self.front=(self.front+1) % self.MaxQueueSize
             #print('当前出队元素为',self.s[self.front])
             return self.s[self.front]
-#队列元素遍历
+#队列元素正序遍历
     def QueueTraverse(self):
         if self.IsEmptyQueue():
             print('队列为空')
