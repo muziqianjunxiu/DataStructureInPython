@@ -26,13 +26,14 @@ class StringList:
 
     #获取串的长度
     def GetStringLength(self):
-        print('串长度为',len(self.chars))
+        #print('串长度为',len(self.chars))
         return len(self.chars)
 
     #获取串的所有字符
     def GetString(self):
         for i in self.chars:
-            print(i,end='\t')
+            print(i,end='')
+        print('\n')
                 
     #由串strSrc复制得当前串
     def StringCopy(self,strSrc):
