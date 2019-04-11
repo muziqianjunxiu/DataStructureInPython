@@ -34,11 +34,7 @@ class TestIndex(StringList):
             if tag==False:          #检查标志位
                 print('匹配失败')
             return
-
-class TestIndexbf:
-    '''
-    创建类TestIndexbf，并创建方法TestIndexBF用于创建主串和模式串
-    '''
+    #测试
     def TestIndexBF(self):
         S=TestIndex()
         S.CreateString()
@@ -52,5 +48,5 @@ class TestIndexbf:
         print('匹配结果：',end='\n')
         S.IndexBF(ipos,T)
               
-test=TestIndexbf()
+test=TestIndex()
 test.TestIndexBF()
