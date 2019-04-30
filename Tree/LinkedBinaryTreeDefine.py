@@ -103,13 +103,13 @@ class LinkedBinaryTree:
                 else:
                     root=None
                     print('树已空')
-                    return
+                    return root
             else:
                 print('找不到该节点')
-                return            
+                return root           
         else:
             print('树为空')
-            return
+            return root
 
 
 '''
