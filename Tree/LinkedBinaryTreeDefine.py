@@ -37,6 +37,11 @@ class LinkedBinaryTree:
         for i in ls:
             root=self.CreateTree(root,i)
     
+    #访问二叉树节点
+    def VisitBinaryTreeNode(self,root):
+        if root.data !=None:
+            print(root.data)
+    
     #中序遍历       遍历结果即是元素从小到大排序结果
     def InOrder(self,root):
         if root!=None:
@@ -44,19 +49,35 @@ class LinkedBinaryTree:
             print('[%2d]' %root.data,end='')
             self.InOrder(root.right)
 
-    #后序遍历
+    #后序遍历递归实现
     def PostOrder(self,root):
         if root!=None:
             self.PostOrder(root.left)
             self.PostOrder(root.right)
             print('[%2d]' %root.data,end='')
+    #后序遍历非递归实现
+    def PostOrderNonRecursive(self,root):
+        
 
-    #前序遍历
+
+    #先序遍历递归实现
     def PreOrder(self,root):
         if root!=None:
             print('[%2d]' %root.data,end='')
             self.PreOrder(root.left)
             self.PreOrder(root.right)
+    #先序遍历非递归实现
+    def PreOrderNonRecursive(self,root):
+        StackNode=[]
+        tTreeNode=root
+        while len(StackNode)>0 or tTreeNode is not None:
+            while tTreeNode is not None:
+                self.VisitBinaryTreeNode(tTreeNode)
+                StackNode.append(tTreeNode)
+                tTreeNode=tTreeNode.left
+            if len(StackNode)>0:
+                tTreeNode=StackNode.pop()
+                tTreeNode=tTreeNode.right
 
     #查找元素
     def Search(self,root,val):
